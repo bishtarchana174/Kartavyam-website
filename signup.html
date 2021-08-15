@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <style>
+             *{
+                font-family: sans-serif;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+ 
+            body{
+               margin: 0 auto;
+	background-image: url("https://cdn.pixabay.com/photo/2018/05/28/06/00/whitespace-3435353__340.jpg");
+        background-repeat: no-repeat;
+	background-size: 100% 720px;
+            }
+ 
+            .form-wrapper{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 20px;
+                width: 400px;
+                padding:20px;
+                border: 1px solid #ffffff;
+                 
+            }
+            
+            .heading
+            {
+                color: white;
+            }
+            
+            h1{
+                color: white;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+ 
+            label{
+                color: white;
+                font-size: large;
+            }
+
+            input{
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0px 10px 0;
+                background: linear-gradient(to right,#7979f4 10%,#ffc0cb);
+                border: 1px solid white;
+                border-radius: 5px;
+                color: #ffffff;
+                display: inline-block;
+            }
+             
+ 
+            input[type="submit"]{
+                font-size: 20px;
+                color: white;
+                background: #014d6f;
+            }
+ 
+            input[type="submit"]:hover{
+                cursor: pointer;
+                background: #014d6f;
+            }
+  body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    background-color:transparent;
+    color:#ededed;
+}
+
+.header
+{
+    background-color:purple;
+    color:#fff;
+    border-color: #080808;
+    min-height: 50px;
+    border: 1px solid transparent;
+}
+
+.inner-header
+{
+    width:80%;
+    margin:auto;
+}
+
+.logo
+{
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-link
+{
+    float:right;
+    font-size:14px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size:16px;
+    font-weight: bold;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    background-color: transparent;
+    color:#ededed;
+}
+.content
+{
+    min-height: 600px;
+}
+    </style>
+    
+    </head>
+ 
+    <body>
+        
+                   
+                
+              <div class="header">
+            <div class="inner-header">
+                
+              
+                <div class = "header-link">
+                    <a href="Loginn.html">login</a>
+                </div>
+                
+                <div class = "header-link">
+                    <a href="#">Sign Up</a>
+                </div>
+                
+            </div>
+        </div>
+        <br><br>
+    
+        <br><br><br><br>
+        <div class="form-wrapper">
+ 
+            <h1>Sign up</h1>
+             
+            <form>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email-id" required="true"/>
+                </div>
+                
+                <div class="form-group">
+                    <label for="User-name">Username</label>
+                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Enter User-name" required="true"/>
+                </div>
+                          
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone no.">
+                </div>
+              
+                <div class="form-group">
+                   <label for="email">Password:</label>
+                   <input type="password" class = "form-control" id="password" name="password" placeholder="Enter Password" required="true"/>
+                </div>
+              
+                <input type="submit" formaction="Login.html" value="SIGN-UP" class="btn-login" />
+            </form>
+</div>
+</body>
+</html>

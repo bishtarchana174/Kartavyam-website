@@ -1,0 +1,384 @@
+<html>
+<head>
+<title>home page</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<style>
+                .thumbnail>img {
+                display: block;
+                max-width: 100%;
+                height: 300px;
+                
+            }
+            .thumbnail_default
+            {
+                border-color: white;
+                
+            }
+            img
+            {
+                width: 500px;
+                height: 136px;
+            }
+.img{
+background-color:#ffffff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#078C54;
+}
+
+li {
+  float: left;
+    font-size: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+ 
+
+}
+  
+ .footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:white;
+     background-color: #078C54;
+     margin-top: 400px;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+
+}
+
+.footer-basic  ul a:hover {
+  opacity:1;
+}
+    
+a{padding: 10px;
+  color: white;
+    }    
+    
+
+.footer-basic .social {
+  text-align:center;
+  padding:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+   
+    
+    </style>
+<body>
+ 
+<div class="img">
+<img src="img/logo.png" width="170" height="50">
+</div>
+<ul >
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="website2.html">Article 1</a></li>
+  <li><a href="website3.html">Article 2</a></li>
+  <li><a href="website4.html">Article 3</a></li>
+  <li><a href="Social.html">Article 4</a></li>
+
+
+</ul>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="img/img-1.jpg" style="width:95%;height:75%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="img/img-2.jpg" style="width:95%;height:75%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="img/img-3.jpg" style="width:95%;height:75%;">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="img/img-4.jpg" style="width:95%;height:75%;">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="img/img-5.jpg" style="width:95%;height:75%;">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i <4; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex >4) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+ 
+        <br><br><br><br>
+         
+     <div class="container-fluid">
+            <div  class="jumbotron">
+                <center>
+                    <h1 style="font-size:45px; font-weight: bolder";>KARTAVYAM</h1></center>
+            </div>
+            </div>
+        <p style="font-size:20px; font-weight: bolder;font-style:cursive;margin-left:15px;margin-right:15px;">Kartavyam moto is to promote and protect the Rule of Law. In the present time, people have forgotten the 
+            need and the importance of the Rule of Law.<br>We at Kartavyam came together with an aim to build a society,
+            where the utmost importance and authority is given to the Rule of Law.We believe, 
+            if the Rule of Law is protected then socio-legal issues like discrimination on any ground, 
+            human rights violation, minority rights, animal welfare, climate justice, communal hatred and violence
+            and many such issues can easily be resolved. To build a society where people are aware about their fundamental rights, 
+            where they know that everyone is equal in front of the law and nobody is bigger than the law itself. 
+            A society where people genuinely understands the importance of the Constitution of the land. 
+            A society where unity and integrity is promoted and protected, and finally where equity, justice,
+            liberty and fraternity is valued.</p>
+        <br><br>
+        <div class="row">
+       <div class="container-fluid">
+            <div  class="jumbotron">
+                <center>
+                    <h1 style="font-size:45px; font-weight: bolder";>KARTAVYAM 'S INITIATIVES</h1></center>
+            </div>
+            </div>
+     <div class="col-md-4 col-sm-3">
+            <div class="thumbnail thumbnail_default">
+                <img src="http://theteachersdigest.com/wp-content/uploads/2014/11/Vectors-233-new.png">
+                <center>
+                <div class="caption">
+                    <h3 style="font-weight:bold";><center>CLEANLINESS CAMPAIGN</h3>
+                  
+                 
+                </div>
+                </center>
+            </div>
+            </div>
+        
+           <div class="col-md-4 col-sm-3">
+            <div class="thumbnail thumbnail_default">
+                <img src="https://s32152.pcdn.co/wp-content/uploads/2018/11/rich-countries-too-many-children-fall-behind-education-Unicef_Helsinki41.jpg">
+                <div class="caption">
+                    <h3 style="font-weight:bold";><center>EDUCATION</h3>
+                     </div>
+            </div>
+           </div>
+                    
+                     <div class="col-md-4 col-sm-3">
+            <div class="thumbnail thumbnail_default">
+                <img src="https://i.pinimg.com/474x/1e/2a/17/1e2a176dcff07ed842e9475b0c2f2b8a.jpg">
+                <div class="caption">
+                    <h3 style="font-weight:bold";><center>ANIMAL WELFARE CAMPAIGN</h3>
+             
+                </div>
+                </center>
+            </div>
+            </div>
+        </div>
+        <br><br><br><br>    
+        
+             <div class="col-md-4 col-sm-3">
+            <div class="thumbnail thumbnail_default">
+                <img src="https://i.dawn.com/primary/2018/02/5a94bd38d853b.jpg">
+                <div class="caption">
+                    <h3 style="font-weight:bold";><center>TRANSGENDER CAMPAIGN</h3>
+             
+                </div>
+                </center>
+            </div>
+            </div>
+        
+               <div class="col-md-4 col-sm-3">
+            <div class="thumbnail thumbnail_default">
+                <img src="https://ccs.in/sites/default/files/attachments/street-vendors.jpg">
+                <div class="caption">
+                    <h3 style="font-weight:bold";><center>STREET VENDOR CAMPAIGN</h3>
+             
+                </div>
+                </center>
+            </div>
+            </div>
+        
+        
+               <div class="col-md-4 col-sm-3">
+            <div class="thumbnail thumbnail_default">
+                <img src="https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2014/07/social-work-political-flat.jpg">
+                <div class="caption">
+                    <h3 style="font-weight:bold";><center>SOCIAL WORK CAMPAIGN</h3>
+             
+                </div>
+                </center>
+            </div>
+            </div>
+        
+        
+        
+  </div>
+</div>
+  
+ 
+ <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.instagram.com/kartavyam_/"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/kartavyam.with.trust/"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+               <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </ul>
+            <p class="copyright">Kartavayam© 2021</p>
+        </footer>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+</body>
+</html>
